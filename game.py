@@ -28,12 +28,12 @@ class RPS:
     def display_moves(self, user_move, ai_move):
         print('------')
         print(f'You: {self.moves[user_move]}')
-        print(f'AI: {self.moves[user_move]}')
+        print(f'AI: {self.moves[ai_move]}')
         print('------')
 
     def check_moves(self, user_move, ai_move):
         if user_move == ai_move:
-            print('It\'s a tie!')
+            print('Tie!')
         elif user_move == 'rock' and ai_move == 'scissors':
             print('User wins!')
         elif user_move == 'scissors' and ai_move == 'paper':
